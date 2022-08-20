@@ -1,0 +1,13 @@
+n=int(input())
+for _ in range(n):
+    a=input()
+    j=len(a)-1
+    i=0
+    x=False
+    while(i<j):
+        if(a[i]!=a[j]):
+            x=True
+            break
+        i+=1
+        j-=1 
+    print("loses") if x else print("wins")
